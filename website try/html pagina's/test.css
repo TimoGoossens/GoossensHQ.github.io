@@ -1,0 +1,769 @@
+
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b3a64;
+    color: #2b3a64;
+}
+
+a{
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.homebuttonbg{
+    background-color: beige !important;
+    
+    box-shadow: 0px 0px 22px 22px beige;
+}
+nav ul li {
+    --c: #f3e00d;
+    color: var(--c);
+    background-color: #2b3a64;
+    font-size: 16px;
+    border: 3px solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: #2b3a64;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .display-none {
+        display: none;
+    }
+  .footerphone{
+    position: absolute;
+    
+    height: fit-content;
+    width: 100%;
+    
+    box-shadow: 0px 0px 20px 20px beige;
+  }
+  .div-row-button {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.div-button{
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+.accordion_bg{
+    background-color: beige !important;
+    
+}
+
+}
+
+@media (min-width: 992px) {
+    .display-none-footer {
+        display: none;
+    }
+    .footer {
+        clear: both;
+        position: absolute;
+        height: auto;
+        
+        
+        width: max-content;
+        
+        width: 100%;
+        background-color: beige !important;
+        color: #2b3a64;
+        box-shadow: 0px 0px 20px 20px beige;
+    }
+    .div-row-button {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    .large_header_margin {
+        margin-bottom: 20px;
+    }
+    .large_header_padding {
+        padding-bottom: 200px;
+    }
+
+}
+.img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 309px;
+    max-height: 117px;
+}
+
+
+
+
+.header {
+    position: relative;
+    height: fit-content;
+    width: auto;
+    background-color: beige !important;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 20px beige;
+    
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    width: 395px;
+    height: 550px;
+    overflow: hidden;
+    border-color: #f3e00d; 
+    border-width: 3px;
+    
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f3e00d;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 200px 0;
+  }
+  
+  .card:hover .info {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2b3a64;
+    color: #f3e00d;
+    border: 0.3em solid #f3e00d;
+    border-radius: 0.5em;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #f3e00d;
+    color: #2b3a64;
+  }
+
+  .quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quick-links li {
+    margin: 10px 0;
+  }
+  
+  .quick-links a {
+    color: #2b3a64;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .quick-links a:hover {
+    color: #0288d1;
+  }
+  .opening-hours {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .opening-hours li {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #2b3a64;
+  }
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-info li {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #2b3a64;
+  }
+  
+  .contact-info a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  /*****  this is for the buttons ont the not homepages*****/
+ 
+  
+
+  .nice-button {
+    padding: 10px 20px;
+    border: 2px solid beige;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b3a64;
+    background-color: beige;
+    box-shadow: 0px 0px 2px 2px #f3e00d;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+
+  .nice-button:hover {
+    cursor: pointer;
+    background-color: beige;
+    color: #f3e00d;
+    box-shadow: 0px 5px 10px 0px #f3e00d;
+  }
+
+  /*****  this is for the offcanvas for small screens*****/
+ 
+  #offcanvas-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 250px;
+    background-color: #2b3a64;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #offcanvas-sidebar.open {
+    left: 0;
+  }
+  
+  #offcanvas-button {
+    background: none;
+    border: none;
+    color: #2b3a64;
+    cursor: pointer;
+    font-size: 36px;
+    
+  }
+.card-div{
+  margin-bottom: 8%;
+}
+
+.tekst-div {
+    
+    
+    padding: 2% 15% 2% 15%;
+    
+    
+    
+    background-color: beige;
+    
+    
+    color: #2b3a64;
+    position: relative;
+    
+    width: 100%;
+    display: block;
+    box-shadow: 0px 0px 20px 20px beige;
+   
+}
+
+.img-div1 {
+  
+    background-image: url("html_foto's/fluiterbos-3t5a8022bewerktHP.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+}
+.img-div2 {
+  
+    background-image: url("html_foto's/Schermafbeelding-2021-04-22-om-144522.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+
+}
+.img-div3 {
+  
+  background-image: url("html_foto's/Schermafbeelding-2021-04-22-om-144442.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+
+}
+
+.img-div4 {
+  
+  background-image: url("html_foto's/reynaersALU-2.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 400px;
+  width: 100%;
+
+}
+.img-div5 {
+  
+  background-image: url("html_foto's/gealanPVC-3.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 400px;
+  width: 100%;
+
+}
+.img-div6 {
+  
+  background-image: url("html_foto's/duco-1.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 400px;
+  width: 100%;
+
+}
+.img-div7 {
+  
+  background-image: url("html_foto's/contact.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 400px;
+  width: 100%;
+
+}
+.borderline {
+  border-right: #2b3a64 2px solid;
+}
+.borderline2 {
+  border-left: #2b3a64 2px solid;
+}
+.borderline3 {
+padding: 10px;
+border-top: #2b3a64 2px solid;
+
+}
+.borderline4{
+  border-bottom: #f3e00d 2px solid;
+  border-top: #f3e00d 2px solid;
+}
+.full-width-container {
+  display: flex;
+  
+  
+  border: 5px solid #f3e00d;
+  margin: 0;
+  
+  
+  
+  
+  
+}
+.contact-section {
+  width: 50%;
+  padding: 20px;
+  background-color: beige;
+}
+
+.inspiratie-section {
+  width: 50%;
+  padding: 20px;
+  background-color: beige;
+}
+
+.left-section {
+  width: 30%;
+  padding: 20px;
+  background-color: beige;
+}
+
+.left-section img {
+  width: 100%;
+  height: auto;
+}
+
+.right-section {
+  width: 70%;
+  padding: 20px;
+  background-color: beige;
+}
+
+.inner-content {
+  padding-bottom: 20px;
+}
+
+.button-section {
+  text-align: right;
+}
+
+.button-card {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.img-section {
+  width: 50%;
+  padding: 20px;
+  background-color: beige;
+   position: relative;
+  display: inline-block;
+}
+
+.img-section img {
+  
+  width: 100%;
+  height: 441px;
+  
+}
+
+.img-section img:hover {
+  opacity: 0.8;
+  scale: 1.05;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.img-section:hover .fa-search-plus {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  color: #f3e00d;
+  
+  
+}
+.img-section .fa-search-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 40px;
+  color: #fff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  
+}
+.grid-item:hover{
+  scale: 0.95;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: #f3e00d 2px solid;
+}
+
+/* Lightbox CSS */
+.lb-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lb-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.lb-close {
+  color: #fff;
+}
+.sticky-btn {
+  background-color: #f3e00d; /* Set background color */
+  color: #2b3a64; /* Set text color */
+  border: none; /* Remove border */
+  padding: 15px 32px; /* Add padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button display as a block element */
+  font-size: 16px; /* Set font size */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow */
+  position: fixed; /* Set the button to fixed position */
+  bottom: 20px; /* Set the distance from the bottom of the page */
+  right: 30px; /* Set the distance from the right of the page */
+  z-index: 99; /* Set the z-index to make the button appear on top of other elements */
+}
+
+.sticky-btn:hover {
+  background-color: #3e8e41; /* Change the background color on hover */
+  color: white;
+  cursor: pointer; /* Add a pointer cursor on hover */
+  
+  scale: 0.95;
+  
+  transition: all 0.5s ease-in-out;
+}
+
+.custom-card {
+  width: 500px;
+  border: 2px solid #f3e00d;
+  background-color: beige;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+}
+.custom-card-2 {
+ 
+  width: 70%;
+  border: 2px solid #f3e00d;
+  background-color: beige;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+}
+
+.custom-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+}
+.custom-card-2 img {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+.custom-card-body {
+  padding: 20px;
+  padding-left: -5px;
+}
+
+.custom-card-date {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.custom-card-title {
+  margin-bottom: 10px;
+ 
+}
+
+.custom-card-button {
+  background-color: #f3e00d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.custom-card-button:hover {
+  background-color: #2b3a64;
+  scale: 0.95;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.custom-card-content{
+  padding: 20px;
+  
+}
+.custom-card-text{
+  font-size: 16px;
+  color: #2b3a64;
+  margin-bottom: 10px;
+  border-top: #f3e00d 2px solid;
+}
+.acr-body{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.acr-body img{
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+
+
+ /* Style the form container */
+ form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Style the form labels */
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #f3e00d;
+  color: #2b3a64;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+/* Add hover effect to the submit button */
+input[type="submit"]:hover {
+  color: #f3e00d;
+  font-weight: bolder;
+  background-color: #2b3a64;
+  scale: 0.95;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}  
