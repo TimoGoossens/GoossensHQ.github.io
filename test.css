@@ -448,9 +448,10 @@ border-top: #2b3a64 2px solid;
   
 }
 .contact-section {
-  width: 50%;
+  width: 100%;
   padding: 20px;
   background-color: beige;
+  justify-content: center;
 }
 
 .inspiratie-section {
