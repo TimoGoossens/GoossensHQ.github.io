@@ -420,9 +420,10 @@ nav ul li span:nth-child(4) {
   width: 100%;
   
 }
-.img-div7:hover{
+.img-div7:hover .info{
   scale: 0.95;
   cursor: pointer;
+
   transition: all 0.5s ease-in-out;
 }
 .borderline {
