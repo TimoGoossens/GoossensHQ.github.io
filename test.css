@@ -448,8 +448,7 @@ border-top: #2b3a64 2px solid;
   
 }
 .contact-section {
-  display: flex;
-  flex-direction: column;
+ 
   
   border: 5px solid #f3e00d;
   margin: 0;
