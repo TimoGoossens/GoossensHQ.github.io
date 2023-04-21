@@ -449,7 +449,8 @@ border-top: #2b3a64 2px solid;
 }
 .contact-section {
   border: 5px solid #f3e00d;
-  margin: 0;
+  margin-left: 25%;
+  margin-right: 25%;
   background-color: beige;
   width: 80%;
 }
