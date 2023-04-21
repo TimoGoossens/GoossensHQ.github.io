@@ -418,8 +418,7 @@ nav ul li span:nth-child(4) {
   
   height: 400px;
   width: 100%;
-  margin-right: 10%;
-  margin-left: 10%;
+
 }
 .borderline {
   border-right: #2b3a64 2px solid;
@@ -452,7 +451,7 @@ border-top: #2b3a64 2px solid;
   border: 5px solid #f3e00d;
   
   background-color: beige;
-  
+  width: 80%;
 }
 
 .inspiratie-section {
