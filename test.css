@@ -423,7 +423,8 @@ nav ul li span:nth-child(4) {
 .img-div7:hover .info{
   scale: 0.95;
   cursor: pointer;
-
+  visibility: visible;
+  opacity: 1;
   transition: all 0.5s ease-in-out;
 }
 .borderline {
