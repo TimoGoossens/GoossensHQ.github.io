@@ -207,7 +207,7 @@ nav ul li span:nth-child(4) {
     margin-top: 20px;
     background-color: #2b3a64;
     color: #f3e00d;
-    border: 0.3em solid #f3e00d;
+    border: 2px solid #f3e00d;
     border-radius: 0.5em;
     text-decoration: none;
   }
